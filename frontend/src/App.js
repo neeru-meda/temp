@@ -1,50 +1,32 @@
 import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import { Navigation } from "./components/Navigation";
+import { ScrollProgress } from "./components/ScrollProgress";
+import Home from "./pages/Home";
+import Agenda from "./pages/Agenda";
+import Facts from "./pages/Facts";
+import Rules from "./pages/Rules";
+import Evaluation from "./pages/Evaluation";
+import Closing from "./pages/Closing";
+import Contingency from "./pages/Contingency";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App min-h-screen paper-texture">
       <BrowserRouter>
+        <ScrollProgress />
+        <Navigation />
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/agenda" element={<Agenda />} />
+          <Route path="/facts" element={<Facts />} />
+          <Route path="/rules" element={<Rules />} />
+          <Route path="/evaluation" element={<Evaluation />} />
+          <Route path="/closing" element={<Closing />} />
+          <Route path="/contingency" element={<Contingency />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </div>
