@@ -1,0 +1,175 @@
+{
+  "project_name": "SHErnova 2026",
+  "theme_concept": "The Modern Renaissance: A sketch-driven, artistic movement celebrating feminine innovation.",
+  "identity": {
+    "persona": "E1: The Anti-AI Designer",
+    "core_principles": [
+      "Fusion over Imitation: Digital functionality meets analog soul.",
+      "Emotion First: Every interaction feels handwritten and personal.",
+      "Content is King: Storytelling through scrolling, not just information dumps.",
+      "Zoom In: Intimacy through macro sketches and texture.",
+      "Negative Space: Luxurious breathing room (3x standard padding)."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Playfair Display, serif",
+      "body": "Inter, sans-serif",
+      "accents": "Caveat, cursive",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-6xl md:text-8xl tracking-tight leading-none font-medium",
+      "h2": "text-4xl md:text-6xl tracking-tight leading-tight font-medium",
+      "h3": "text-2xl md:text-4xl tracking-normal font-medium",
+      "body_lg": "text-lg md:text-xl leading-relaxed text-muted-foreground",
+      "body": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-sm uppercase tracking-widest font-semibold text-accent-foreground"
+    },
+    "pairing_rule": "Use 'Playfair Display' for emotional impact (Hero, Section Titles). Use 'Inter' for density (Rules, Agenda). Use 'Caveat' for annotations/human touch."
+  },
+  "colors": {
+    "palette": {
+      "background": "#F5E6E8",
+      "foreground": "#4A2C40",
+      "primary": "#4A2C40",
+      "primary_foreground": "#F5E6E8",
+      "secondary": "#C47A8C",
+      "secondary_foreground": "#FFFFFF",
+      "muted": "#EAD4D8",
+      "muted_foreground": "#8E707A",
+      "accent": "#C6A75E",
+      "accent_foreground": "#FFFFFF",
+      "border": "#D8C0C6",
+      "input": "#EAD4D8",
+      "ring": "#C47A8C"
+    },
+    "tailwind_mapping": {
+      "bg-background": "bg-[#F5E6E8]",
+      "text-foreground": "text-[#4A2C40]",
+      "bg-primary": "bg-[#4A2C40]",
+      "text-primary-foreground": "text-[#F5E6E8]",
+      "bg-secondary": "bg-[#C47A8C]",
+      "text-secondary-foreground": "text-white",
+      "border-accent": "border-[#C6A75E]",
+      "text-accent": "text-[#C6A75E]"
+    },
+    "usage_rules": [
+      "NEVER use pure black (#000000). Use Deep Plum (#4A2C40) for all main text.",
+      "Background is Warm Beige (#F5E6E8), NOT white.",
+      "Use Muted Gold (#C6A75E) strictly for high-value accents (borders, active states), never for large backgrounds.",
+      "Dusty Rose (#C47A8C) is for secondary actions and soft highlights."
+    ]
+  },
+  "visual_enhancers": {
+    "textures": [
+      "Paper Grain: Overlay a transparent noise texture on the entire body background.",
+      "Watercolor Splash: Use soft watercolor blobs behind headers.",
+      "Pencil Strokes: Use 'rough-notation' style SVG lines for underlines and circling."
+    ],
+    "shadows": {
+      "sketch_shadow": "4px 4px 0px 0px rgba(74, 44, 64, 0.1)",
+      "soft_lift": "0 20px 40px -10px rgba(74, 44, 64, 0.1)"
+    },
+    "borders": {
+      "radius": "rounded-xl",
+      "style": "border-2 border-primary/10 hover:border-primary/30 transition-colors"
+    }
+  },
+  "layout_strategy": {
+    "grid_system": "The Sketchbook Grid",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32",
+    "bento_rules": [
+      "Avoid perfect symmetry.",
+      "Tilt images slightly (rotate-1 or -rotate-1) to mimic a scrapbook.",
+      "Overlap elements: Allow text to cross into image boundaries slightly."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground px-8 py-4 rounded-full font-serif text-lg hover:scale-105 transition-transform shadow-sketch_shadow",
+      "secondary": "border-2 border-primary/20 text-primary bg-transparent px-8 py-4 rounded-full font-serif text-lg hover:bg-primary/5 transition-colors",
+      "ghost": "text-primary underline decoration-wavy decoration-accent hover:text-accent transition-colors"
+    },
+    "cards": {
+      "default": "bg-white/50 backdrop-blur-sm border border-white/40 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all",
+      "feature": "bg-[#F9F1F2] border-l-4 border-accent p-8 rounded-r-xl"
+    },
+    "navigation": {
+      "style": "Floating 'frosted paper' bar. bg-[#F5E6E8]/80 backdrop-blur-md border border-white/20 rounded-full px-8 py-4 mt-8 mx-auto w-fit shadow-lg z-50 fixed top-0 left-0 right-0"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "defaults": {
+      "transition": {
+        "type": "spring",
+        "stiffness": 100,
+        "damping": 20
+      }
+    },
+    "required_animations": [
+      "Draw-on-scroll: Lines/Paths appearing as user scrolls.",
+      "Fade-up-stagger: List items appearing one by one with a slight delay.",
+      "Hover-lift: Cards lifting 4px on hover.",
+      "Parallax: Background textures moving slower than foreground content."
+    ]
+  },
+  "image_assets": {
+    "hero_main": {
+      "url": "https://images.unsplash.com/photo-1765029582794-1bfadf8f9d2b?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Artistic sketch portrait of a visionary woman",
+      "usage": "Hero section, large feature. Apply 'multiply' blend mode or mask edges."
+    },
+    "team_collaboration": {
+      "url": "https://images.pexels.com/photos/7283202/pexels-photo-7283202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Women collaborating on sketches",
+      "usage": "About/Community section. Represents the hackathon spirit."
+    },
+    "texture_floral": {
+      "url": "https://images.unsplash.com/photo-1741274064505-e9164ef31384?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Frozen floral texture dusty rose",
+      "usage": "Section backgrounds (opacity 10-20%)"
+    },
+    "texture_watercolor": {
+      "url": "https://images.unsplash.com/photo-1716900134112-8ac8f77c1e1e?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Abstract watercolor splash",
+      "usage": "Behind headings or as a decorative corner element."
+    }
+  },
+  "tech_stack_instructions": {
+    "framework": "React (Create React App structure)",
+    "styling": "Tailwind CSS + Shadcn/UI (customized)",
+    "icons": "Lucide React (stroke-width={1.5})",
+    "fonts": "Import Playfair Display and Inter via Google Fonts in index.css",
+    "files": {
+      "extension": ".jsx for components",
+      "css": "Use Tailwind classes primarily. Use custom CSS in index.css only for complex animations or textures."
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'framer-motion', 'lucide-react', 'clsx', 'tailwind-merge'.",
+    "2. FONTS: Add @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Caveat:wght@400;700&display=swap'); to index.css.",
+    "3. THEME: Update tailwind.config.js with the custom color palette defined above.",
+    "4. COMPONENT OVERRIDE: Do not use default Shadcn styles. Override them to match the 'Sketch' aesthetic (rounded-full buttons, paper cards).",
+    "5. NO BORDERS: Avoid hard 1px gray borders. Use shadows or background color differences to separate sections.",
+    "6. SKETCH EFFECT: Where possible, use CSS 'mask-image' or SVG borders to create irregular edges on images.",
+    "7. PAGE STRUCTURE: Create all 7 pages (Home, Agenda, Facts, Rules, Evaluation, Closing, Contingency) with unique layouts, NOT just text dumps."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms.",
+    "You MUST NOT center align the app container. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠 etc.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors: separates good from extraordinary.",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use 'sonner' for toasts located in /app/frontend/src/components/ui/sonner.jsx"
+  ]
+}
