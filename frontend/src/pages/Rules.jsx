@@ -46,23 +46,18 @@ export default function Rules() {
     <div className="pt-32 pb-24">
       <section data-testid="rules-hero" className="px-6 md:px-12 mb-24">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+          <h1
             className="font-playfair text-5xl md:text-7xl font-semibold text-foreground mb-6"
             data-testid="rules-title"
           >
             Rules & Guidelines
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
+          <p
             className="text-lg md:text-xl text-muted-foreground leading-relaxed"
           >
             Everything you need to know to participate and succeed at SHErnova 2026.
-          </motion.p>
+          </p>
         </div>
       </section>
 

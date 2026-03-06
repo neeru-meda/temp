@@ -75,46 +75,39 @@ export default function Home() {
         </div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative z-10">
-          <motion.div
-            initial="initial"
-            animate="animate"
-            variants={staggerContainer}
-          >
-            <motion.div variants={fadeInUp} className="mb-4">
+          <div>
+            <div className="mb-4">
               <span className="inline-flex items-center space-x-2 px-4 py-2 bg-dark-violet text-white text-xs font-semibold tracking-widest uppercase rounded-full shadow-lg">
                 <Sparkles size={14} />
                 <span>March 24-25, 2026</span>
               </span>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              variants={fadeInUp}
+            <h1
               className="font-playfair text-5xl md:text-7xl font-bold text-foreground leading-tight mb-4"
               data-testid="hero-title"
             >
               SHE<span className="text-secondary">rnova</span> 2026
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              variants={fadeInUp}
+            <p
               className="text-xl md:text-2xl text-foreground font-medium mb-3"
               data-testid="hero-subtitle"
             >
               Build for Her. Code for Impact.
-            </motion.p>
+            </p>
 
-            <motion.p
-              variants={fadeInUp}
+            <p
               className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6"
             >
               30-Hour Offline Hackathon • Women's Welfare Innovation Challenge
-            </motion.p>
+            </p>
 
-            <motion.div variants={fadeInUp} className="mb-6">
+            <div className="mb-6">
               <Countdown />
-            </motion.div>
+            </div>
 
-            <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="#register"
                 data-testid="register-cta-button"
@@ -130,9 +123,9 @@ export default function Home() {
               >
                 View Agenda
               </a>
-            </motion.div>
+            </div>
 
-            <motion.div variants={fadeInUp} className="mt-6 flex items-center space-x-6 text-sm">
+            <div className="mt-6 flex items-center space-x-6 text-sm">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
                 <span className="text-muted-foreground font-medium">Limited Spots</span>
@@ -141,15 +134,10 @@ export default function Home() {
                 <Users size={16} className="text-secondary" />
                 <span className="text-muted-foreground font-medium">200+ Registered</span>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative hidden lg:block"
-          >
+          <div className="relative hidden lg:block">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30">
               <img
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=500&fit=crop"
@@ -162,7 +150,7 @@ export default function Home() {
                 <p className="text-white text-lg font-medium">This is 30 hours of rewriting narratives.</p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
