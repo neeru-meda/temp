@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Agenda from "./pages/Agenda";
 import Facts from "./pages/Facts";
 import Rules from "./pages/Rules";
-import Evaluation from "./pages/Evaluation";
+import SponsorsMentors from "./pages/SponsorsMentors";
 import Closing from "./pages/Closing";
 import Contingency from "./pages/Contingency";
 import Admin from "./pages/Admin";
@@ -23,7 +23,7 @@ function App() {
           <Route path="/agenda" element={<Agenda />} />
           <Route path="/facts" element={<Facts />} />
           <Route path="/rules" element={<Rules />} />
-          <Route path="/evaluation" element={<Evaluation />} />
+          <Route path="/sponsors-mentors" element={<SponsorsMentors />} />
           <Route path="/closing" element={<Closing />} />
           <Route path="/contingency" element={<Contingency />} />
           <Route path="/admin" element={<Admin />} />

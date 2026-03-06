@@ -22,7 +22,7 @@ export const Navigation = () => {
     { name: 'Agenda', path: '/agenda' },
     { name: 'Facts', path: '/facts' },
     { name: 'Rules', path: '/rules' },
-    { name: 'Evaluation', path: '/evaluation' },
+    { name: 'Sponsors & Mentors', path: '/sponsors-mentors' },
     { name: 'Closing', path: '/closing' },
     { name: 'Safety', path: '/contingency' }
   ];

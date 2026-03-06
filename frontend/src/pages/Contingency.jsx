@@ -68,42 +68,42 @@ export default function Contingency() {
             <SafetyCard
               icon={Zap}
               title="Power Backup"
-              description="Multiple diesel generators and UPS systems ensure uninterrupted power supply throughout the 30-hour event."
-              color="bg-accent"
+              description="Generator backup and UPS systems in place to minimize power disruptions during the event."
+              color="bg-dark-violet"
             />
 
             <SafetyCard
               icon={Wifi}
               title="Internet Redundancy"
-              description="Primary and backup internet connections with multiple ISPs. Mobile hotspots available as tertiary backup."
+              description="Multiple internet connections available with backup options to maintain connectivity."
               color="bg-secondary"
             />
 
             <SafetyCard
               icon={HeartPulse}
               title="Medical Support"
-              description="On-site medical team with first-aid station. Ambulance on standby. Nearest hospital is 5 minutes away."
+              description="First-aid facilities and medical personnel available on-site. Nearest hospital within proximity."
               color="bg-soft-lavender"
             />
 
             <SafetyCard
               icon={Shield}
               title="Security Supervision"
-              description="24/7 professional security personnel. CCTV monitoring across the venue. Safe and secure environment."
+              description="Professional security personnel on duty. CCTV monitoring to maintain a safe environment."
               color="bg-dusty-rose"
             />
 
             <SafetyCard
               icon={Phone}
               title="Emergency Contacts"
-              description="Dedicated helpline numbers for participants. Organizer contacts shared via WhatsApp group."
-              color="bg-muted-gold"
+              description="Dedicated helpline numbers for participants. Organizer contacts shared via communication groups."
+              color="bg-dark-violet"
             />
 
             <SafetyCard
               icon={AlertTriangle}
               title="Emergency Response"
-              description="Trained emergency response team. Clear evacuation routes marked. Fire safety equipment installed."
+              description="Emergency response protocols in place. Clear evacuation procedures and fire safety equipment."
               color="bg-secondary"
             />
           </div>

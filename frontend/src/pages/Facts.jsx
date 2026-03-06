@@ -38,7 +38,7 @@ export default function Facts() {
             transition={{ delay: 0.1 }}
             className="text-lg md:text-xl text-muted-foreground leading-relaxed"
           >
-            Understanding the challenges helps us build better solutions.
+            How a 30-hour hackathon can create real societal impact.
           </motion.p>
         </div>
       </section>

@@ -21,11 +21,13 @@ export const Footer = () => {
             <div className="space-y-3 text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <Mail size={16} className="text-secondary" />
-                <span className="text-sm">hello@shernova.tech</span>
+                <a href="mailto:shernova2k26@gmail.com" className="text-sm hover:text-secondary transition-colors">
+                  shernova2k26@gmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin size={16} className="text-secondary" />
-                <span className="text-sm">Algorithm Building, AUCE</span>
+                <span className="text-sm">AUCE, Visakhapatnam</span>
               </div>
             </div>
           </div>

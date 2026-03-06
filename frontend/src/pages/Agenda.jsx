@@ -75,7 +75,7 @@ export default function Agenda() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-6"
           >
-            <span className="inline-flex items-center space-x-2 px-4 py-2 bg-accent/10 text-accent text-xs font-semibold tracking-widest uppercase rounded-full">
+            <span className="inline-flex items-center space-x-2 px-4 py-2 bg-dark-violet/10 text-dark-violet text-xs font-semibold tracking-widest uppercase rounded-full">
               <Calendar size={16} />
               <span>March 24-25, 2026</span>
             </span>
@@ -110,8 +110,8 @@ export default function Agenda() {
             viewport={{ once: true }}
             className="flex items-center space-x-4 mb-12"
           >
-            <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center">
-              <span className="font-playfair text-2xl font-bold text-secondary">1</span>
+            <div className="w-16 h-16 rounded-2xl bg-dark-violet/10 flex items-center justify-center">
+              <span className="font-playfair text-2xl font-bold text-dark-violet">1</span>
             </div>
             <div>
               <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-foreground">Day 1</h2>
@@ -143,8 +143,8 @@ export default function Agenda() {
             viewport={{ once: true }}
             className="flex items-center space-x-4 mb-12"
           >
-            <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center">
-              <span className="font-playfair text-2xl font-bold text-accent">2</span>
+            <div className="w-16 h-16 rounded-2xl bg-dark-violet/10 flex items-center justify-center">
+              <span className="font-playfair text-2xl font-bold text-dark-violet">2</span>
             </div>
             <div>
               <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-foreground">Day 2</h2>

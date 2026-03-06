@@ -77,14 +77,14 @@ export default function Closing() {
             <CeremonyStep
               icon={Trophy}
               title="Winner Announcements"
-              description="The moment you've been waiting for! Winners will be announced across multiple categories including Best Overall, Most Innovative, Best UX/UI, and Best Social Impact."
-              color="bg-accent"
+              description="The moment you've been waiting for! Winners will be announced across multiple categories."
+              color="bg-dark-violet"
             />
 
             <CeremonyStep
               icon={Award}
               title="Special Recognition Awards"
-              description="Beyond the main prizes, special awards will recognize exceptional efforts in specific areas like Best Women-Led Team, Best First-Time Hackers, and People's Choice Award."
+              description="Beyond the main prizes, special awards will recognize exceptional efforts in specific areas."
               color="bg-soft-lavender"
             />
 
@@ -99,7 +99,7 @@ export default function Closing() {
               icon={Sparkles}
               title="Sponsor Acknowledgment"
               description="A heartfelt thank you to our sponsors, partners, mentors, and everyone who made SHErnova 2026 possible."
-              color="bg-muted-gold"
+              color="bg-dark-violet"
             />
 
             <CeremonyStep
@@ -112,49 +112,8 @@ export default function Closing() {
         </div>
       </section>
 
-      <section data-testid="prizes-section" className="px-6 md:px-12 mb-24 bg-primary/5 py-24 -mx-6">
-        <div className="max-w-6xl mx-auto px-6 md:px-12">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-playfair text-3xl md:text-5xl font-semibold text-foreground mb-16 text-center"
-          >
-            Prize Categories
-          </motion.h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { title: 'Best Overall', prize: 'Grand Prize + Trophy', desc: 'The team with the highest overall score' },
-              { title: 'Most Innovative', prize: 'Innovation Award', desc: 'Most creative and unique solution' },
-              { title: 'Best Social Impact', prize: 'Impact Award', desc: 'Solution with greatest potential impact' },
-              { title: 'Best UX/UI', prize: 'Design Excellence Award', desc: 'Most polished user experience' },
-              { title: 'Best Technical', prize: 'Tech Excellence Award', desc: 'Most technically sophisticated' },
-              { title: "People's Choice", prize: 'Community Award', desc: 'Voted by participants and audience' }
-            ].map((category, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white/60 backdrop-blur-sm border border-white/50 p-8 rounded-2xl hover:shadow-soft-lift transition-all text-center"
-                data-testid={`prize-category-${idx}`}
-              >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center">
-                  <Trophy className="text-accent" size={28} />
-                </div>
-                <h3 className="font-playfair text-xl font-semibold text-foreground mb-2">{category.title}</h3>
-                <p className="text-sm font-medium text-secondary mb-3">{category.prize}</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">{category.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section data-testid="post-event-section" className="px-6 md:px-12 mb-24">
-        <div className="max-w-4xl mx-auto">
+      <section data-testid="post-event-section" className="px-6 md:px-12 mb-24 bg-primary/5 py-24 -mx-6">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
