@@ -150,16 +150,16 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative hidden lg:block"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30">
               <img
-                src="https://images.unsplash.com/photo-1765029582794-1bfadf8f9d2b?crop=entropy&cs=srgb&fm=jpg&q=85"
-                alt="Visionary woman innovator"
-                className="w-full h-[400px] object-cover"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=500&fit=crop"
+                alt="Women in tech innovation"
+                className="w-full h-[450px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-white font-playfair text-2xl font-semibold">This is not just 30 hours.</p>
-                <p className="text-white/90 text-lg">This is 30 hours of rewriting narratives.</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/40 to-transparent" />
+              <div className="absolute bottom-8 left-8 right-8">
+                <p className="text-white font-playfair text-2xl font-bold mb-2">This is not just 30 hours.</p>
+                <p className="text-white text-lg font-medium">This is 30 hours of rewriting narratives.</p>
               </div>
             </div>
           </motion.div>

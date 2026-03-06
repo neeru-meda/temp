@@ -8,7 +8,6 @@ import Agenda from "./pages/Agenda";
 import Facts from "./pages/Facts";
 import Rules from "./pages/Rules";
 import SponsorsMentors from "./pages/SponsorsMentors";
-import Closing from "./pages/Closing";
 import Contingency from "./pages/Contingency";
 import Admin from "./pages/Admin";
 
@@ -24,7 +23,6 @@ function App() {
           <Route path="/facts" element={<Facts />} />
           <Route path="/rules" element={<Rules />} />
           <Route path="/sponsors-mentors" element={<SponsorsMentors />} />
-          <Route path="/closing" element={<Closing />} />
           <Route path="/contingency" element={<Contingency />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
