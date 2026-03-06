@@ -57,7 +57,7 @@ module.exports = {
                         'deep-plum': '#4A2C40',
                         'dusty-rose': '#C47A8C',
                         'soft-lavender': '#B8A4D4',
-                        'dark-violet': '#7B68B8'
+                        'dark-violet': '#4D2842'
                 },
                 fontFamily: {
                         'playfair': ['Playfair Display', 'serif'],
