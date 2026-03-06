@@ -9,6 +9,7 @@ import Facts from "./pages/Facts";
 import Rules from "./pages/Rules";
 import SponsorsMentors from "./pages/SponsorsMentors";
 import Contingency from "./pages/Contingency";
+import Registration from "./pages/Registration";
 import Admin from "./pages/Admin";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/rules" element={<Rules />} />
           <Route path="/sponsors-mentors" element={<SponsorsMentors />} />
           <Route path="/contingency" element={<Contingency />} />
+          <Route path="/register" element={<Registration />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
       </BrowserRouter>

@@ -109,7 +109,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="#register"
+                href="/register"
                 data-testid="register-cta-button"
                 className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:scale-105 transition-transform shadow-lg group"
               >
@@ -462,9 +462,7 @@ export default function Home() {
                 </div>
                 {tier.active ? (
                   <a
-                    href="https://forms.gle/example"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/register"
                     className="block text-center px-6 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:scale-105 transition-transform shadow-lg"
                   >
                     Register Now
@@ -528,7 +526,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="#register"
+                href="/register"
                 data-testid="final-cta-button"
                 className="inline-flex items-center px-10 py-5 bg-white text-primary rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
               >

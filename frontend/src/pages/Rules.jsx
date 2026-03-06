@@ -43,7 +43,7 @@ const CriteriaBar = ({ label, percentage, color }) => (
 
 export default function Rules() {
   return (
-    <div className="pt-32 pb-24">
+    <div className="pt-32 pb-24 overflow-x-hidden">
       <section data-testid="rules-hero" className="px-6 md:px-12 mb-24">
         <div className="max-w-4xl mx-auto text-center">
           <h1

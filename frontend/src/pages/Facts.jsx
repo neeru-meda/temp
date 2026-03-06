@@ -251,7 +251,7 @@ export default function Facts() {
               This is 30 hours of rewriting narratives.
             </p>
             <a
-              href="/#register"
+              href="/register"
               className="inline-flex items-center px-10 py-4 bg-white text-primary rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-lg"
             >
               Join the Movement
