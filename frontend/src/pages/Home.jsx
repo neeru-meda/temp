@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Users, Clock, Award, Trophy, Zap, Target, Gift, Star, Heart, Code, Lightbulb, TrendingUp } from 'lucide-react';
 import { Footer } from '../components/Footer';
+import landingPageImage from '../assets/landing_page.png';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -21,7 +22,7 @@ const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetDate = new Date('2026-03-24T09:00:00').getTime();
+    const targetDate = new Date('2026-04-11T09:00:00').getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -79,7 +80,7 @@ export default function Home() {
             <div className="mb-4">
               <span className="inline-flex items-center space-x-2 px-4 py-2 bg-dark-violet text-white text-xs font-semibold tracking-widest uppercase rounded-full shadow-lg">
                 <Sparkles size={14} />
-                <span>March 24-25, 2026</span>
+                <span>April 11-12, 2026</span>
               </span>
             </div>
 
@@ -125,7 +126,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-6 flex items-center space-x-6 text-sm">
+            <div className="mt-6 flex items-center space-x-6 text-sm hidden">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
                 <span className="text-muted-foreground font-medium">Limited Spots</span>
@@ -140,7 +141,7 @@ export default function Home() {
           <div className="relative hidden lg:block">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=500&fit=crop"
+                src={landingPageImage}
                 alt="Women in tech innovation"
                 className="w-full h-[450px] object-cover"
               />
@@ -493,11 +494,13 @@ export default function Home() {
             </p>
             <div className="flex items-center justify-center space-x-4 text-sm">
               <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                <div className="w-2 h-2 bg-[#462b41] rounded-full animate-pulse" />
                 <span className="text-muted-foreground">Limited spots remaining</span>
               </div>
-              <span className="text-muted-foreground">•</span>
-              <span className="text-muted-foreground font-medium">Register before spots fill up!</span>
+              <div className='hidden'>
+                <span className="text-muted-foreground">•</span>
+                <span className="text-muted-foreground font-medium">Register before spots fill up!</span>
+              </div>
             </div>
           </motion.div>
         </div>

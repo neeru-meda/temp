@@ -73,7 +73,7 @@ export default function Agenda() {
           <div className="mb-6">
             <span className="inline-flex items-center space-x-2 px-4 py-2 bg-dark-violet/10 text-dark-violet text-xs font-semibold tracking-widest uppercase rounded-full">
               <Calendar size={16} />
-              <span>March 24-25, 2026</span>
+              <span>April 11-12, 2026</span>
             </span>
           </div>
 
@@ -105,7 +105,7 @@ export default function Agenda() {
             </div>
             <div>
               <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-foreground">Day 1</h2>
-              <p className="text-muted-foreground">March 24, 2026 - Foundation & Innovation</p>
+              <p className="text-muted-foreground">April 11, 2026 - Foundation & Innovation</p>
             </div>
           </motion.div>
 
@@ -138,7 +138,7 @@ export default function Agenda() {
             </div>
             <div>
               <h2 className="font-playfair text-3xl md:text-4xl font-semibold text-foreground">Day 2</h2>
-              <p className="text-muted-foreground">March 25, 2026 - Refinement & Recognition</p>
+              <p className="text-muted-foreground">April 12, 2026 - Refinement & Recognition</p>
             </div>
           </motion.div>
 

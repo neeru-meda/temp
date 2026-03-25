@@ -49,7 +49,7 @@ export const Navigation = () => {
                 </span>
               </Link>
 
-              <div className="hidden lg:flex items-center space-x-8">
+              <div className="hidden lg:flex items-center gap-x-12">
                 {navLinks.map((link) => (
                   <Link
                     key={link.path}
